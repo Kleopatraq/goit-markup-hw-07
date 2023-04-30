@@ -1,0 +1,20 @@
+@media screen and (max-width: 767px) {
+    @media screen and (min-width: 428px) {
+
+        .conteiner {
+            width: 428px;
+        }
+    }
+
+    .navigation-header-list {
+        display: none;
+    }
+
+    .header-contact {
+        display: none;
+    }
+
+    .header-contact-list {
+        display: none;
+    }
+}
