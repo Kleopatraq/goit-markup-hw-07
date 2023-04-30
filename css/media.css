@@ -17,4 +17,20 @@
     .header-contact-list {
         display: none;
     }
+
+    .preference {
+        display: none;
+    }
+
+    .works {
+        display: none;
+    }
+
+    .advantages-item:not(:last-child) {
+        margin-bottom: 72px;
+    }
 }
+
+/*! ----------SCREEN 768PX-------- */
+
+/*! ----------HEDER-------- */
