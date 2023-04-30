@@ -870,7 +870,7 @@ screen and (min-resolution: 2dppx) {
     .first-footer-container {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+
     }
 
     .second-footer-container {

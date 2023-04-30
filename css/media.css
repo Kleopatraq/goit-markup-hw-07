@@ -135,4 +135,14 @@
         letter-spacing: 0.02em;
         margin-bottom: 36px;
     }
+
+    .preference {
+        display: none;
+    }
+
+    .advantages-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
 }
