@@ -136,21 +136,21 @@
 </header>-->
 
  <header class="header header-top-line">
-      <div class="heder-conteiner conteiner">
-        <nav class="header-nav">
+      <div class="heder-container container">
+        <nav class="header-navigation">
           <a href="./index.html" class="logo link"
             >Web<span class="logo-studio-header">Studio</span></a
           >
-          <ul class="nav-list list">
-            <li class="nav-list-item">
+          <ul class="navigation-list list">
+            <li class="navigation-list-item">
               <a href="./index.html" class="nav-link link header-underline"
                 >Studio</a
               >
             </li>
-            <li class="nav-list-item">
+            <li class="navigation-list-item">
               <a href="./portfolio.html" class="nav-link link">Portfolio</a>
             </li>
-            <li class="nav-list-item">
+            <li class="navigation-list-item">
               <a href="" class="nav-link link">Contacts</a>
             </li>
           </ul>
@@ -262,9 +262,64 @@
           </div>
         </div>
       </section>
-      
-      <!--Section 1-->
+       <!--Advanteg content-->
       <section class="advantages">
+          <h2 hidden>About</h2>
+          <div class="container">
+           <ul class="advantages-list list">
+             <li class="advantages-item">
+              <div class="advantages-container">
+              <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna-1"></use>
+                </svg>
+           </div>
+           <h3 class="advantages-title">Strategy</h3>
+          <p class="advantages-text">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+             </li>
+             <li class="advantages-item">
+             <div class="advantages-container">
+             <svg width="64" height="64">
+                <use href="./images/icons.svg#icon-clock-1"></use>
+                </svg>
+              </div>
+              <h3 class="advantages-title">Punctuality</h3>
+              <p class="advantages-text">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </li>
+              <li class="advantages-item">
+                <div class="advantages-container">
+                  <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
+              <h3 class="advantages-title">Diligence</h3>
+              <p class="advantages-text">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </li>
+              <li class="advantages-item">
+                <div class="advantages-container">
+                  <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
+              <h3 class="advantages-title">Technologies</h3>
+              <p class="advantages-text">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </li>
+            </ul>
+          </div>
+      </section>
+      <!--Section 1-->
+      <!-- <section class="advantages">
         <div class="container advantages-container">
           <h2 hidden>About</h2>
           <div class="preference">
@@ -338,7 +393,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!--Section 2-->
       <section class="works">
         <div class="container works-container">
@@ -552,8 +607,8 @@
       </section>
       <!--Section 4-->
       <section class="customers">
-        <h2 class="customers-title">Customers</h2>
-        <div class="customers-wrap">
+        <div class="customers-wrap container">
+          <h2 class="customers-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
               <a href="" class="customers-link link">
@@ -619,35 +674,35 @@
           <ul class="footer-soc-list list">
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
-                <svg class="footer-icon-item">
+                <svg class="footer-icon-item" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram-1"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
-                <svg class="footer-icon-item">
+                <svg class="footer-icon-item" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
-                <svg class="footer-icon-item">
+                <svg class="footer-icon-item" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link link">
-                <svg class="footer-icon-item">
+                <svg class="footer-icon-item" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="third-footer-container ">
+        <div class="third-footer-container">
           <p class="subscribe-text">Subscribe</p>
             <form>
               <div class="form-btn-wrap">
@@ -660,7 +715,9 @@
                   required
                 />
               </label>
+              <div class="submit-btn">
               <button class="footer-btn" type="submit">Subscribe</button>
+              </div>
             </div>
             </form>
         </div>
