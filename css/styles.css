@@ -635,7 +635,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 .customers-title {
-
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -646,24 +645,20 @@ screen and (min-resolution: 2dppx) {
 
 .customers-list {
     display: flex;
-    justify-content: center;
-    gap: 72px 16px;
     flex-wrap: wrap;
+    gap: 72px 16px;
 }
 
-.customers-list-item {
-    width: 190px;
-    height: 88px;
-}
+.customers-list-item {}
+
+.customers-wrap {}
 
 .customers-link {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 190px;
+    height: 88px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
+    display: flex;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -705,13 +700,21 @@ screen and (min-resolution: 2dppx) {
     }
 
     .second-footer-container {
-        width: 208px;
-        margin-left: 20px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         margin-bottom: 72px;
+    }
+
+    .third-footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form-btn-wrap {
+        display: flex;
+        flex-wrap: wrap;
 
     }
 
@@ -721,9 +724,8 @@ screen and (min-resolution: 2dppx) {
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
-        text-align: center;
         color: #ffffff;
-        margin-bottom: 16px;
+
     }
 
     .footer-text {
@@ -733,6 +735,7 @@ screen and (min-resolution: 2dppx) {
         letter-spacing: 0.02em;
         margin-top: 16px;
         color: #f4f4fd;
+        margin-bottom: 72px;
     }
 
     .footer-soc-list {
@@ -751,9 +754,11 @@ screen and (min-resolution: 2dppx) {
         border-radius: 50%;
         background-color: #4d5ae5;
         display: flex;
-        justify-content: center;
         align-items: center;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        justify-content: center;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .footer-soc-link:hover,
@@ -771,29 +776,24 @@ screen and (min-resolution: 2dppx) {
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #ffffff;
-        text-align: center;
         margin-bottom: 16px;
     }
 
     .subscribe-input {
-        padding-left: 16px;
         outline: none;
         background-color: transparent;
         border-color: transparent;
-
-        width: 100%;
+        width: 398px;
         height: 40px;
         border: 1px solid #ffffff;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         border-radius: 4px;
         color: #ffffff;
-
         margin-bottom: 16px;
     }
 
     .footer-btn {
         position: relative;
-        margin-left: 24px;
         width: 165px;
         height: 40px;
         font-family: "Roboto";
@@ -803,11 +803,8 @@ screen and (min-resolution: 2dppx) {
         line-height: 24px;
         color: #ffffff;
         background-color: #4d5ae5;
-        padding-left: 24px;
-        text-align: start;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        margin: 0 auto;
     }
 
     .footer-btn::after {
@@ -821,7 +818,49 @@ screen and (min-resolution: 2dppx) {
         background-repeat: no-repeat;
         margin-left: 16px;
     }
+
+    .footer-studio {
+        font-family: "Raleway", sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.16;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: #f4f4fd;
+    }
+
+    .footer-logo {
+        font-family: "Raleway", sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: #4d5ae5;
+
+    }
+
+    .footer-icon-item {
+        width: 24px;
+        height: 24px;
+        fill: #FFFFFF;
+    }
+
+    .footer-soc-link:hover,
+    .footer-soc-link:focus {
+        background-color: #31d0aa;
+    }
+
+    .footer-soc-title {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        margin-bottom: 16px;
+    }
 }
+
+
 
 .first-footer-container {}
 
@@ -829,60 +868,60 @@ screen and (min-resolution: 2dppx) {
 .footer-container {}
 
 .footer-logo {
-    font-family: "Raleway", sans-serif;
+    /*font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17px;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #4d5ae5;
+    */
 }
 
 .footer-studio {
-    font-family: "Raleway", sans-serif;
+
+    /* font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: #f4f4fd;
+    */
 }
 
 .footer-text {
+    /*
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
     margin-top: 16px;
     margin-bottom: 72px;
+    */
 }
 
 
 /*---------------Footer-SOC-----------------*/
 
-.second-footer-container {
-    margin-left: 120px;
-}
+.second-footer-container {}
 
-.footer-soc-title {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    margin-bottom: 16px;
-}
 
+
+/*
 .footer-soc-list {
     display: flex;
     gap: 16px;
 }
-
+*/
+/*
 .footer-soc-item {
     width: 40px;
     height: 40px;
 
-}
+}*/
 
+/*
 .footer-soc-link {
     width: 100%;
     height: 100%;
@@ -895,33 +934,14 @@ screen and (min-resolution: 2dppx) {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-.footer-icon-item {
-    width: 24px;
-    height: 24px;
-    fill: #FFFFFF;
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-    background-color: #31d0aa;
-}
+*/
 
 /*---------------Modal Footer---------------*/
 .third-footer-container {
     margin-left: 80px;
 }
 
-.subscribe-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: calc(24 / 16);
-    letter-spacing: 0.02em;
-    color: #ffffff;
-
-    margin-bottom: 16px;
-}
+.subscribe-text {}
 
 .subscribe-input {
     padding-left: 16px;
