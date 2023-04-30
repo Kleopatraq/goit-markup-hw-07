@@ -551,7 +551,9 @@
         flex-wrap: nowrap;
     }
 
-    .team-item {}
+    .team-item {
+        display: flex;
+    }
 
 
     .team-title {
