@@ -646,6 +646,7 @@ screen and (min-resolution: 2dppx) {
 .customers-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 72px 16px;
 }
 
@@ -710,12 +711,13 @@ screen and (min-resolution: 2dppx) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 
     .form-btn-wrap {
         display: flex;
         flex-wrap: wrap;
-
+        justify-content: center;
     }
 
     .footer-soc-title {
@@ -938,7 +940,9 @@ screen and (min-resolution: 2dppx) {
 
 /*---------------Modal Footer---------------*/
 .third-footer-container {
+    /*
     margin-left: 80px;
+    */
 }
 
 .subscribe-text {}
