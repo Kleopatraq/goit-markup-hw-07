@@ -18,12 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/media.css"/>
     <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
-    <!--Heder content-->
-    
+    <!--
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
@@ -44,32 +43,29 @@
             </li>
           </ul>
         </nav>
-        </button>
         <address class="header-contact">
           <ul class="header-contact-list list">
             <li class="header-contact-item">
               <a
                 class="header-contact-link link"
                 href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+                >info@devstudio.com</a>
             </li>
             <li class="header-contact-item">
               <a class="header-contact-link link" href="tel:+11(000)1111111"
-                >+11 (000) 111-11-11</a
-              >
+                >+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
-        <button type="button" class="modile-menu-open js-open-menu">
+        <button type="button" class="modile-menu-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class=""  width="32" height="22">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
         </button>
       </div>
 
-      <!-- MOBILE MENU -->
-      <div class="modile-menu js-menu-container is-hidden">
+      -MOBILE MENU 
+      <div class="modile-menu js-menu-container" id="mobile-menu">
         <button type="button" class="modile-menu-close js-close-menu">
           <svg class=""  width="7" height="7">
             <use href="./images/icons.svg#icon-close-black"></use>
@@ -135,8 +131,120 @@
                         </svg>
                       </a>
                     </li>
-                  </ul>
-                </div>
+                 </ul>
+        </div>
+</header>-->
+
+ <header class="header header-top-line">
+      <div class="heder-conteiner conteiner">
+        <nav class="header-nav">
+          <a href="./index.html" class="logo link"
+            >Web<span class="logo-studio-header">Studio</span></a
+          >
+          <ul class="nav-list list">
+            <li class="nav-list-item">
+              <a href="./index.html" class="nav-link link header-underline"
+                >Studio</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="./portfolio.html" class="nav-link link">Portfolio</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" class="nav-link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="modile-menu-open js-open-menu">
+          <svg class="" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+        <address class="address">
+          <ul class="address-list list">
+            <li class="address-list-item">
+              <a class="address-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="address-list-item">
+              <a class="address-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+
+        <!-- MOBILE MENU -->
+
+
+
+      <div class="mobile-menu js-menu-container">
+        <button type="button" class="mobile-menu-close-btn js-close-menu">
+          <svg class="mobile-menu-close-btn-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <nav class="nav-mobile-menu">
+          <ul class="mobile-list list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link studio-mobile link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="./portfolio.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <address>
+            <ul class="mobile-address-list list">
+              <li class="list-address-item">
+                <a class="address-link-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+              </li>
+              <li class="list-address-item">
+                <a class="address-link-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-soc-list">
+            <li class="mobile-soc-item list">
+              <a href="" class="team-soc-link">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item list">
+               <a href="" class="team-soc-link link">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item list">
+               <a href="" class="team-soc-link link">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-soc-item list">
+               <a href="" class="team-soc-link link">
+                <svg class="mobile-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -196,7 +304,7 @@
               <div class="advantages-item-wrap">
                 <h3 class="advantages-title">Strategy</h3>
                 <p class="advantages-text">
-                  Our goal is to identify the business problem to walk <br> away with
+                  Our goal is to identify the business problem to walk away with
                   the perfect and creative solution.
                 </p>
               </div>
@@ -539,7 +647,7 @@
             </li>
           </ul>
         </div>
-        <div class="third-footer-container">
+        <div class="third-footer-container ">
           <p class="subscribe-text">Subscribe</p>
             <form>
               <div class="form-btn-wrap">
@@ -645,7 +753,7 @@
           <button type="submit" class="modal-departure-btn">Send</button>
       </div>
     </div>
-    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

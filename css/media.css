@@ -1,22 +1,18 @@
 @media screen and (max-width: 767px) {
     @media screen and (min-width: 428px) {
-
-        .conteiner {
+        .container {
             width: 428px;
         }
     }
 
-    .navigation-header-list {
+    .nav-list {
         display: none;
     }
 
-    .header-contact {
+    .address {
         display: none;
     }
 
-    .header-contact-list {
-        display: none;
-    }
 
     .preference {
         display: none;
@@ -34,3 +30,109 @@
 /*! ----------SCREEN 768PX-------- */
 
 /*! ----------HEDER-------- */
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 0 15px;
+    }
+
+    .conteiner {
+        width: 768px;
+        min-height: 72px;
+    }
+
+    .modile-menu-open {
+        display: none;
+    }
+
+    .header-nav {
+        display: flex;
+        gap: 120px;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-container {
+        margin-left: 0px;
+
+    }
+
+    .header-logo-web {
+        margin-left: 0px;
+        display: flex;
+        justify-content: start;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-underline {
+        position: relative;
+        color: #404BBF;
+    }
+
+    .header-underline::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -28px;
+        width: 100%;
+        height: 4px;
+        background-color: #404bbf;
+        border-radius: 2px;
+    }
+
+    .address {
+        font-style: normal;
+    }
+
+    .address-link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+
+    .hero {
+        min-width: 768px;
+        margin: 0 auto;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/tabel-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        .hero {
+            min-width: 768px;
+            margin: 0 auto;
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)), url(../images/tabel-bg@2x.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    .hero-title {
+        width: 496px;
+        font-size: 56px;
+        line-height: calc(60 / 56);
+        letter-spacing: 0.02em;
+        margin-bottom: 36px;
+    }
+}
