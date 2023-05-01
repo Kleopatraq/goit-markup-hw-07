@@ -32,7 +32,7 @@
 /*! ----------HEDER-------- */
 @media screen and (min-width: 768px) {
     .header {
-        padding: 0 0;
+        padding: 22px 0px;
     }
 
     .container {
@@ -84,7 +84,7 @@
         content: "";
         position: absolute;
         left: 0;
-        bottom: -10px;
+        bottom: -35px;
         width: 100%;
         height: 4px;
         background-color: #404bbf;
@@ -93,6 +93,14 @@
 
     .address {
         font-style: normal;
+    }
+
+    .address-list-item {
+        margin-bottom: 4px;
+    }
+
+    .address-list-item:not(:last-child) {
+        margin-bottom: 4px;
     }
 
     .address-link {
@@ -105,7 +113,7 @@
     }
 
     .hero {
-        min-width: 768px;
+        max-width: 768px;
         margin: 0 auto;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url(../images/hero-bg/tabel-bg.jpg);
@@ -171,6 +179,11 @@
         gap: 72px 24px;
     }
 
+    .customers-link {
+        width: 168px;
+    }
+
+
     .footer {
         padding: 96px 0;
     }
@@ -178,13 +191,14 @@
     .footer-container {
         display: flex;
         flex-wrap: wrap;
-        padding-left: 108px;
         gap: 72px 24px;
-        width: 528px;
+        width: 582px;
     }
 
     .first-footer-conteiner {
         width: 264px;
+        gap: 0px;
+
     }
 
     .footer-logo {
@@ -274,6 +288,7 @@
 
     .form-btn-wrap {
         display: flex;
+        justify-content: center;
     }
 
     .footer {}
@@ -348,7 +363,7 @@
         content: "";
         position: absolute;
         left: 0;
-        bottom: -27px;
+        bottom: -30px;
         width: 100%;
         height: 4px;
         background-color: #404bbf;
@@ -383,7 +398,7 @@
     .header {
 
         border-bottom: 1px solid #e7e9fc;
-        padding: 24px 0;
+        padding: 24px 0px;
     }
 
     .header-portfolio {
@@ -498,7 +513,7 @@
     }
 
     .advantages {
-        padding-top: 96px;
+        padding-top: 120px;
     }
 
     .advantages-list {
@@ -512,6 +527,7 @@
     }
 
     .advantages-text {
+        font-weight: 400px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -527,6 +543,10 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 8px;
+    }
+
+    .works {
+        pa
     }
 
     /*--------Team------*/
@@ -681,7 +701,10 @@
         fill: #4D5AE5;
     }
 
+
+
     /*---------------FOOTER---------------*/
+
     .footer {
         background-color: #2e2f42;
         padding: 100px 0px;
@@ -722,9 +745,7 @@
 
     /*---------------Footer-SOC-----------------*/
 
-    .second-footer-container {
-        margin-left: 120px;
-    }
+    .first-footer-container {}
 
     .footer-soc-title {
         font-size: 16px;
@@ -743,6 +764,14 @@
         width: 40px;
         height: 40px;
 
+    }
+
+    .second-footer-container {
+        margin-left: 75px;
+    }
+
+    .third-footer-container {
+        margin-left: 80px;
     }
 
     .footer-soc-link {

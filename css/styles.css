@@ -525,6 +525,7 @@ body {
     margin: 0 auto;
     padding-top: 112px;
     padding-bottom: 112px;
+    max-width: 428px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -575,6 +576,7 @@ screen and (min-resolution: 2dppx) {
     padding: 16px 32px;
     margin: 0 auto;
     border: none;
+    border-radius: 4px;
 
     /* font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -693,7 +695,11 @@ screen and (min-resolution: 2dppx) {
     margin-bottom: 72px;
 }
 
-.works-list {}
+.works-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
 
 .works-item {}
 
@@ -762,7 +768,7 @@ screen and (min-resolution: 2dppx) {
 
 .team-card {
     text-align: center;
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .team-soc-list {
