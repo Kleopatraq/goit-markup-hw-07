@@ -32,12 +32,11 @@
 /*! ----------HEDER-------- */
 @media screen and (min-width: 768px) {
     .header {
-        padding: 0 15px;
+        padding: 0 0;
     }
 
     .container {
         width: 768px;
-        min-height: 72px;
     }
 
     .modile-menu-open {
@@ -85,7 +84,7 @@
         content: "";
         position: absolute;
         left: 0;
-        bottom: -28px;
+        bottom: -10px;
         width: 100%;
         height: 4px;
         background-color: #404bbf;
@@ -102,13 +101,14 @@
         line-height: calc(14 / 12);
         letter-spacing: 0.02em;
         color: #434455;
+        gap: 4px;
     }
 
     .hero {
         min-width: 768px;
         margin: 0 auto;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/tabel-bg.jpg);
+                rgba(46, 47, 66, 0.7)), url(../images/hero-bg/tabel-bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -121,7 +121,7 @@
             min-width: 768px;
             margin: 0 auto;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)), url(../images/tabel-bg@2x.jpg);
+                    rgba(46, 47, 66, 0.7)), url(../images/hero-bg/tabel-bg@2x.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -180,6 +180,7 @@
         flex-wrap: wrap;
         padding-left: 108px;
         gap: 72px 24px;
+        width: 528px;
     }
 
     .first-footer-conteiner {
@@ -275,9 +276,7 @@
         display: flex;
     }
 
-    .footer {
-        padding-left: 104px;
-    }
+    .footer {}
 
     .subscribe-input {
         padding: 0 16px;
@@ -327,7 +326,7 @@
 
 @media screen and (min-width: 1158px) {
     .container {
-        width: 1158px;
+        min-width: 1158px;
     }
 
     .nav-link {
@@ -419,7 +418,7 @@
         background-color: #2e2f42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/image-bg.jpeg);
+            url(../images/hero-bg/hero-bg.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -435,7 +434,7 @@
             max-width: 1440px;
             margin: 0 auto;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)), url(../images/image-bg@2x.jpg);
+                    rgba(46, 47, 66, 0.7)), url(../images/hero-bg/hero-bg@2x.jpg);
         }
     }
 
@@ -540,21 +539,9 @@
     .container-team {}
 
     .wrap-team {
-        flex-wrap: nowrap;
-    }
-
-    .team-list {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        flex-wrap: nowrap;
+        gap: 24px;
     }
-
-    .team-item {
-        display: flex;
-    }
-
 
     .team-title {
         font-size: 36px;
@@ -630,7 +617,6 @@
         height: 16px;
         fill: #F4F4FD;
     }
-
 
     /*---------------CUSTOMERS---------------*/
 

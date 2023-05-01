@@ -518,13 +518,13 @@ body {
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        url(../images/image-bg.jpeg);
+        url(../images/hero-bg/mobile-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
     margin: 0 auto;
-    padding: 112px 0;
+    padding-top: 112px;
+    padding-bottom: 112px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -535,7 +535,7 @@ screen and (min-resolution: 2dppx) {
         margin: 0 auto;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/mobile-bg@x2.jpg);
+            url(../images/hero-bg/mobile-bg@2x.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -605,6 +605,7 @@ screen and (min-resolution: 2dppx) {
 
 .advantages {
     padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 /*
@@ -632,7 +633,7 @@ screen and (min-resolution: 2dppx) {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 72px;
+
 }
 
 .advantages-text:not(:last-child) {
@@ -822,7 +823,10 @@ screen and (min-resolution: 2dppx) {
     gap: 72px 16px;
 }
 
-.customers-list-item {}
+.customers-list-item {
+    width: 110px;
+    height: 56px;
+}
 
 .customers-wrap {}
 
@@ -832,6 +836,8 @@ screen and (min-resolution: 2dppx) {
     border: 1px solid #8e8f99;
     border-radius: 4px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
