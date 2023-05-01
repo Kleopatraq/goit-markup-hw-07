@@ -91,6 +91,10 @@
         border-radius: 2px;
     }
 
+    .hero-btn {
+        border-radius: 4px;
+    }
+
     .address {
         font-style: normal;
     }
